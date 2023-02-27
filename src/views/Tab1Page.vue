@@ -1,23 +1,40 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
-      <ExploreContainer name="Tab 1 page" />
-    </ion-content>
-  </ion-page>
+<layout-component>
+<music-list-action-sheet></music-list-action-sheet>
+</layout-component>
 </template>
+<script>
+import LayoutComponent from '@/components/LayoutComponent.vue';
+import MusicListActionSheet from '@/components/MusicListActionSheet.vue';
+export default{
+components:{
+LayoutComponent,
+MusicListActionSheet
+},
 
-<script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 </script>
+<style scoped>
+h3{
+font-weight: bold;
+}
+.ion-no-border{
+border:none;
+}
+.gray{
+color:gray;
+}
+</style>
